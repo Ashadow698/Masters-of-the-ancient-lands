@@ -9,16 +9,18 @@
 <body>
   <div id="game-container">
     <h1>Conquer the Lands</h1>
+
     <div id="info">
       <p>Army Power: <span id="army-power">20</span></p>
       <p>Gold: <span id="gold">0</span></p>
-      <p>Nukes: <span id="nukes">0</span>/5</p>
+      <p>Nukes: <span id="nukes">0</span> / 5</p>
     </div>
+
     <div id="map"></div>
 
     <div id="result-screen" class="hidden">
       <h2 id="result-title"></h2>
-      <img id="result-animation" src="" alt="Result Animation" />
+      <video id="result-video" autoplay muted loop></video>
       <div>
         <button onclick="openShop()">Go to Shop</button>
         <button onclick="backToMap()">Back to Map</button>
