@@ -3,7 +3,7 @@ const goldDisplay = document.getElementById('gold');
 const powerDisplay = document.getElementById('army-power');
 const nukesDisplay = document.getElementById('nukes');
 const resultTitle = document.getElementById('result-title');
-const resultAnimation = document.getElementById('result-animation');
+const resultVideo = document.getElementById('result-video');
 let armyPower = 20;
 let gold = 0;
 let nukes = 0;
@@ -60,7 +60,7 @@ function startBattle() {
   const win = armyPower >= selectedLocation.power;
   document.getElementById('result-screen').classList.remove('hidden');
   resultTitle.innerText = win ? 'Victory!' : 'Defeat!';
-  resultAnimation.src = win ? 'assets/victory.gif' : 'assets/defeat.gif';
+  resultVideo.src = win ? 'assets/victory.mp4' : 'assets/defeat.mp4';
 
   if (win) {
     selectedLocation.conquered = true;
@@ -76,7 +76,7 @@ function useNuke() {
   document.getElementById('nuke-choice').classList.add('hidden');
   document.getElementById('result-screen').classList.remove('hidden');
   resultTitle.innerText = 'Nuke Deployed! Victory!';
-  resultAnimation.src = 'assets/nuke.gif';
+  resultVideo.src = 'assets/nuke.mp4';
   selectedLocation.conquered = true;
   document.getElementById(`loc-${selectedLocation.id}`).style.backgroundColor = '#ff6961';
   gold += rewards[selectedLocation.type];
