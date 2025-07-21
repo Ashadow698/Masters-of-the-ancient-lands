@@ -1,0 +1,66 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f2e6d0;
+  color: #3b2f2f;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#game-container {
+  padding: 20px;
+}
+
+#map {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.location {
+  width: 120px;
+  height: 100px;
+  background-color: #d4b483;
+  border: 2px solid #5c4433;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.location:hover {
+  background-color: #c9a368;
+}
+
+.hidden {
+  display: none;
+}
+
+#result-animation {
+  width: 200px;
+  margin: 15px;
+}
+
+button {
+  margin: 8px;
+  padding: 10px 15px;
+  font-weight: bold;
+  background-color: #a1683a;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #844f2f;
+}
+
+#shop-items button {
+  display: block;
+  margin: 6px auto;
+}
