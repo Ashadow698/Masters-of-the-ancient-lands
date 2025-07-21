@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conquer the Lands</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <h1>Conquer the Lands</h1>
+    <div id="info">
+      <p>Army Power: <span id="army-power">20</span></p>
+      <p>Gold: <span id="gold">0</span></p>
+      <p>Nukes: <span id="nukes">0</span>/5</p>
+    </div>
+    <div id="map"></div>
+
+    <div id="result-screen" class="hidden">
+      <h2 id="result-title"></h2>
+      <img id="result-animation" src="" alt="Result Animation" />
+      <div>
+        <button onclick="openShop()">Go to Shop</button>
+        <button onclick="backToMap()">Back to Map</button>
+      </div>
+    </div>
+
+    <div id="nuke-choice" class="hidden">
+      <h2>Use a Nuke?</h2>
+      <button onclick="useNuke()">Yes</button>
+      <button onclick="startBattle()">No</button>
+    </div>
+
+    <div id="shop" class="hidden">
+      <h2>Shop</h2>
+      <div id="shop-items"></div>
+      <button onclick="closeShop()">Close Shop</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
